@@ -32,7 +32,6 @@ public class JenkinsFormParams extends TestBase {
             stateAndcity = format ("%s %s", state, city),
             formTitle = "Thanks for submitting the form";
 
-
     @DisplayName("Заполнение формы регистрации студента")
     @Test
     @Tag("owner")
