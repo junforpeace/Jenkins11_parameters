@@ -7,7 +7,7 @@ import pages.RegistrationFormPage;
 import static io.qameta.allure.Allure.step;
 import static java.lang.String.format;
 
-@Tag("owner")
+
 public class JenkinsFormParams extends TestBase {
     Faker faker = new Faker();
     RegistrationFormPage registrationFormPage = new RegistrationFormPage();
@@ -35,6 +35,7 @@ public class JenkinsFormParams extends TestBase {
 
     @DisplayName("Заполнение формы регистрации студента")
     @Test
+    @Tag("owner")
     void FormInput() {
 
         step("Open Registration page", ()-> {

@@ -33,7 +33,7 @@ dependencies {
             "org.junit.jupiter:junit-jupiter:$junitVersion",
             "com.github.javafaker:javafaker:1.0.2",
             "org.slf4j:slf4j-simple:1.7.36",
-            'org.aeonbits.owner:owner:1.0.4'
+            'org.aeonbits.owner:owner:1.0.12'
     )
 }
 
@@ -54,13 +54,8 @@ tasks.withType(Test) {
 
 
 }
-task demoqa_tests(type: Test) {
-    useJUnitPlatform {
-        includeTags "demoqa"
-    }
 
-}
-task ownerTest (type: Test) {
+task ownerTest(type: Test) {
     useJUnitPlatform {
         includeTags "owner"
     }
