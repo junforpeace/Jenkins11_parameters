@@ -26,11 +26,13 @@ public class TestBase {
         String browserSize = System.getProperty("browserSize", "1920x1080");
         String baseUrl = System.getProperty("baseUrl", "https://demoqa.com");
         String browser = System.getProperty("browser", "chrome");
+        String version = System.getProperty("version", "99");
 
 
         Configuration.baseUrl = baseUrl;
         Configuration.browserSize = browserSize;
         Configuration.browser = browser;
+        Configuration.browserVersion = version;
         Configuration.remote = "https://" + login + ":" + password + "@" + remoteDriver + "/wd/hub";
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
