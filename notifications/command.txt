@@ -1,0 +1,5 @@
+//для отправки сообщений от бота из терминала
+curl -X POST -H 'Content-Type: application/json' -d '{"chat_id": "123456789", "text": "This is a test from curl", "disable_notification": true}' https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage
+
+  //для заполнения json файла информацией из аллюра для отправки сообщения ботом
+  java "-DconfigFile=notifications/summary.json" -jar allure-notifications-4.1.jar
