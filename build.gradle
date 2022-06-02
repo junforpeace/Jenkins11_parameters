@@ -57,7 +57,14 @@ tasks.withType(Test) {
 }
 
 task ownertest(type: Test) {
-        useJUnitPlatform {
+    useJUnitPlatform {
         includeTags "owner"
+    }
+}
+
+
+task simple_test(type: Test) {
+        useJUnitPlatform {
+        includeTags "simple"
     }
 }
