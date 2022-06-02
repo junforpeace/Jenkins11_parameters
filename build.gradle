@@ -57,8 +57,7 @@ tasks.withType(Test) {
 }
 
 task ownertest(type: Test) {
-    systemProperties(System.getProperties())
-    useJUnitPlatform {
+        useJUnitPlatform {
         includeTags "owner"
     }
 }
